@@ -1,0 +1,694 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600;700&family=Cinzel:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="pweb.css" />
+    <title>ÀṢỌ ÌBÍLẸ̀ — Aṣọ ni ìtàn ènìyàn</title>
+    <meta
+      name="description"
+      content="ÀṢỌ ÌBÍLẸ̀ — Musée numérique dédié à la mode Yoruba précoloniale. Découvrez les tissus ancestraux, les rôles du royaume et l'histoire vivante du vêtement."
+    />
+  </head>
+  <body>
+    <!-- ============================================
+         INTRO OVERLAY
+         ============================================ -->
+    <div class="intro-overlay" id="intro-overlay">
+      <div class="intro-bg"></div>
+      <div class="intro-content">
+        <svg class="intro-logo" viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M40 8 L72 24 L72 56 L40 72 L8 56 L8 24 Z" />
+          <path d="M40 24 L56 32 L56 48 L40 56 L24 48 L24 32 Z" />
+          <circle cx="40" cy="40" r="4" fill="currentColor" />
+        </svg>
+        <div class="intro-title">ÀṢỌ ÌBÍLẸ̀</div>
+        <div class="intro-slogan">Aṣọ ni ìtàn ènìyàn.</div>
+        <div class="intro-translation">Le vêtement est l'histoire des gens.</div>
+      </div>
+    </div>
+
+    <!-- ============================================
+         NAVIGATION
+         ============================================ -->
+    <header class="navbar" id="navbar">
+      <div class="navbar-inner">
+        <a href="#accueil" class="logo">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M20 4 L36 12 L36 28 L20 36 L4 28 L4 12 Z" />
+            <path d="M20 12 L28 16 L28 24 L20 28 L12 24 L12 16 Z" />
+            <circle cx="20" cy="20" r="2" fill="currentColor" />
+          </svg>
+          <div class="logo-text">
+            <div class="logo-title">ÀṢỌ ÌBÍLẸ̀</div>
+            <div class="logo-subtitle">Aṣọ ni ìtàn ènìyàn</div>
+          </div>
+        </a>
+
+        <nav>
+          <ul class="nav-links" id="nav-links">
+            <li><button data-target="accueil">Accueil</button></li>
+            <li><button data-target="heritage">Héritage</button></li>
+            <li><button data-target="tissus">Tissus</button></li>
+            <li><button data-target="collections">Collections</button></li>
+            <li><button data-target="philosophie">Philosophie</button></li>
+          </ul>
+        </nav>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+          <svg id="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M3 6h18M3 12h18M3 18h18" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu" id="mobile-menu">
+        <ul>
+          <li><button data-target="accueil">Accueil</button></li>
+          <li><button data-target="heritage">Héritage</button></li>
+          <li><button data-target="tissus">Tissus</button></li>
+          <li><button data-target="collections">Collections</button></li>
+          <li><button data-target="philosophie">Philosophie</button></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============================================
+           HERO
+           ============================================ -->
+      <section class="hero" id="accueil">
+        <div class="hero-bg">
+          <img
+            src="Images/bg.jpeg"
+            alt="Cérémonie royale traditionnelle Yoruba"
+          />
+          <div class="hero-overlay"></div>
+        </div>
+
+        <div class="container hero-content">
+          <h1 class="italic-title">
+            Avant les frontières,<br />
+            le <span class="accent">tissu</span> parlait.
+          </h1>
+
+          <p>
+            Dans les royaumes Yorubas d'autrefois, on ne portait pas simplement un vêtement —
+            on portait une <em class="accent">parole silencieuse</em>.
+            Chaque étoffe disait ton rang, ton royaume, ton rôle, ton honneur.
+          </p>
+
+          <div class="hero-buttons">
+            <button class="btn btn-primary" data-target="heritage">
+              Découvrir l'héritage
+              <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M13 5l7 7-7 7" />
+              </svg>
+            </button>
+            <button class="btn btn-secondary" data-target="tissus">Les tissus sacrés</button>
+          </div>
+
+          <div class="hero-stats">
+            <div>
+              <div class="stat-key">Ifẹ̀ · Ọyọ̀</div>
+              <div class="stat-value">Royaumes d'origine</div>
+            </div>
+            <div>
+              <div class="stat-key">Aso Oke</div>
+              <div class="stat-value">Tissu tissé à la main</div>
+            </div>
+            <div>
+              <div class="stat-key">3 étoffes</div>
+              <div class="stat-value">Sanyan · Etu · Alaari</div>
+            </div>
+            <div>
+              <div class="stat-key">Archive</div>
+              <div class="stat-value">Musée numérique</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scroll-indicator">
+          <span>Défiler</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <path d="M12 5v14M5 12l7 7 7-7" />
+          </svg>
+        </div>
+      </section>
+
+      <!-- ============================================
+           HERITAGE
+           ============================================ -->
+      <section class="heritage adire-bg" id="heritage">
+        <div class="container">
+          <div class="heritage-grid">
+            <div class="heritage-image reveal">
+              <div class="heritage-image-inner">
+                <img
+                  src="https://images.pexels.com/photos/24738158/pexels-photo-24738158.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=700"
+                  alt="Atelier de tissage traditionnel Aso Oke"
+                />
+                <div class="heritage-image-caption">
+                  <div class="label">Atelier Aso Oke</div>
+                  <div class="quote">« Le tisserand est un gardien de mémoire. »</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reveal reveal-delay-1">
+              <h2 class="italic-title">
+                Le <span class="accent">langage</span> du tissu.
+              </h2>
+              <div class="heritage-text">
+                <p>
+                  Dans les anciens royaumes d'<span class="accent" style="font-weight:500;">Ọyọ̀</span> et d'
+                  <span class="accent" style="font-weight:500;">Ifẹ̀</span>, le vêtement était codifié comme
+                  un alphabet silencieux.
+                </p>
+                <p>
+                  Un simple changement de tissu révélait la maturité d'un homme, la noblesse d'une lignée,
+                  ou le statut spirituel d'un initié.
+                </p>
+                <p>
+                  Les <em style="color:var(--ochre);">tisserands</em> étaient respectés comme des gardiens
+                  de mémoire — leurs métiers en bois portaient les motifs d'une nation entière.
+                </p>
+              </div>
+
+              <div class="heritage-features">
+                <div class="feature-box">
+                  <div class="feature-icon">◈</div>
+                  <div class="feature-title">Tissé à la main</div>
+                  <div class="feature-sub">Pas d'industrie</div>
+                </div>
+                <div class="feature-box">
+                  <div class="feature-icon">◆</div>
+                  <div class="feature-title">Motifs codés</div>
+                  <div class="feature-sub">Chaque signe parle</div>
+                </div>
+                <div class="feature-box">
+                  <div class="feature-icon">✦</div>
+                  <div class="feature-title">Sens social</div>
+                  <div class="feature-sub">Rang et honneur</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+           TISSUS
+           ============================================ -->
+      <section class="fabrics aso-oke-bg" id="tissus">
+        <div class="container">
+          <div class="section-intro reveal">
+            <h2 class="italic-title">
+              Les <span class="accent">matières</span> de l'identité
+            </h2>
+            <p>
+              Trois étoffes ancestrales. Trois langages. Trois destins tissés à la main,
+              héritage vivant des maîtres tisserands Yoruba.
+            </p>
+          </div>
+
+          <div class="fabric-list">
+            <!-- SANYAN -->
+            <article class="fabric-card reveal">
+              <div class="fabric-image">
+                <div class="fabric-image-inner">
+                  <div class="fabric-sacred-tag">Étoffe sacrée</div>
+                  <img
+                    src="https://images.pexels.com/photos/37439166/pexels-photo-37439166.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=700&w=600"
+                    alt="Tissu Sanyan"
+                  />
+                  <div class="fabric-image-bottom">
+                    <div class="fabric-name-overlay">SANYAN</div>
+                    <div class="fabric-subtitle-overlay">La soie sauvage des sages</div>
+                  </div>
+                </div>
+              </div>
+              <div class="fabric-content">
+                <div class="fabric-title-block">
+                  <div class="fabric-color-swatch" style="background:#e8d9b8;"></div>
+                  <div class="fabric-title-text">
+                    <h3>SANYAN</h3>
+                    <div class="fabric-symbol">Paix · Maturité</div>
+                  </div>
+                </div>
+                <div>
+                  <div class="fabric-label">Histoire</div>
+                  <p class="fabric-history">
+                    Tissu sacré produit à partir de soie naturelle sauvage, d'une douceur ivoire presque silencieuse.
+                    Il était porté par les anciens sages et les personnes respectées — ceux dont la parole portait le poids d'une vie entière.
+                  </p>
+                </div>
+                <div>
+                  <div class="fabric-label">Porté pour</div>
+                  <ul class="fabric-contexts">
+                    <li><span class="diamond">◇</span><span> Cérémonies de sagesse</span></li>
+                    <li><span class="diamond">◇</span><span> Consultations importantes</span></li>
+                    <li><span class="diamond">◇</span><span> Symbole de maturité et de paix</span></li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <!-- ETU -->
+            <article class="fabric-card reverse reveal">
+              <div class="fabric-image">
+                <div class="fabric-image-inner">
+                  <div class="fabric-sacred-tag">Étoffe sacrée</div>
+                  <img
+                    src="https://images.pexels.com/photos/37439147/pexels-photo-37439147.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=700&w=600"
+                    alt="Tissu Etu"
+                  />
+                  <div class="fabric-image-bottom">
+                    <div class="fabric-name-overlay">ETU</div>
+                    <div class="fabric-subtitle-overlay">L'indigo de l'autorité</div>
+                  </div>
+                </div>
+              </div>
+              <div class="fabric-content">
+                <div class="fabric-title-block">
+                  <div class="fabric-color-swatch" style="background:#1a2f5c;"></div>
+                  <div class="fabric-title-text">
+                    <h3>ETU</h3>
+                    <div class="fabric-symbol">Autorité · Stabilité</div>
+                  </div>
+                </div>
+                <div>
+                  <div class="fabric-label">Histoire</div>
+                  <p class="fabric-history">
+                    Tissu d'un indigo profond, teint avec patience dans des cuves sacrées.
+                    Porté par les élites et les dignitaires, il évoquait la nuit étoilée et la profondeur des décisions royales.
+                  </p>
+                </div>
+                <div>
+                  <div class="fabric-label">Porté pour</div>
+                  <ul class="fabric-contexts">
+                    <li><span class="diamond">◇</span><span> Réunions royales</span></li>
+                    <li><span class="diamond">◇</span><span> Événements politiques</span></li>
+                    <li><span class="diamond">◇</span><span> Symbole d'autorité et de stabilité</span></li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <!-- ALAARI -->
+            <article class="fabric-card reveal">
+              <div class="fabric-image">
+                <div class="fabric-image-inner">
+                  <div class="fabric-sacred-tag">Étoffe sacrée</div>
+                  <img
+                    src="Images/reine.jpeg"
+                    alt="Tissu Alaari"
+                  />
+                  <div class="fabric-image-bottom">
+                    <div class="fabric-name-overlay">ALAARI</div>
+                    <div class="fabric-subtitle-overlay">Le rouge du pouvoir</div>
+                  </div>
+                </div>
+              </div>
+              <div class="fabric-content">
+                <div class="fabric-title-block">
+                  <div class="fabric-color-swatch" style="background:#a0362a;"></div>
+                  <div class="fabric-title-text">
+                    <h3>ALAARI</h3>
+                    <div class="fabric-symbol">Pouvoir · Vitalité</div>
+                  </div>
+                </div>
+                <div>
+                  <div class="fabric-label">Histoire</div>
+                  <p class="fabric-history">
+                    Tissu rouge vif, vibrant comme un feu, réservé aux moments de grande célébration et de pouvoir.
+                    Porté par les rois et les reines lors des intronisations, il symbolisait la vitalité du royaume.
+                  </p>
+                </div>
+                <div>
+                  <div class="fabric-label">Porté pour</div>
+                  <ul class="fabric-contexts">
+                    <li><span class="diamond">◇</span><span> Intronisations royales</span></li>
+                    <li><span class="diamond">◇</span><span> Fêtes et célébrations</span></li>
+                    <li><span class="diamond">◇</span><span> Symbole de pouvoir et de vitalité</span></li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+           COLLECTIONS
+           ============================================ -->
+      <section class="collections aso-oke-bg" id="collections">
+        <div class="container">
+          <div class="section-intro reveal">
+            <h2 class="italic-title">
+              Les <span class="accent">rôles</span> du royaume
+            </h2>
+            <p>
+              Chaque caste, chaque destin, chaque fonction avait son étoffe.
+              Le vêtement Yoruba n'habillait pas le corps — il nommait l'âme.
+            </p>
+          </div>
+
+          <div class="collection-list">
+            <!-- ROIS -->
+            <article class="collection-card reveal">
+              <div class="collection-image">
+                <div class="collection-accent-bar" style="background:#c9a15a;"></div>
+                <img
+                  src="Images/roi.jpeg"
+                  alt="Roi Yoruba"
+                />
+                <div class="collection-image-bottom">
+                  <div class="collection-role-tag" style="color:#c9a15a;border-color:#c9a15a;">Rôle royal</div>
+                  <div class="collection-image-subtitle">L'Agbada, symbole d'autorité suprême</div>
+                </div>
+              </div>
+              <div class="collection-content">
+                <div class="collection-header">
+                  <div class="collection-letter" style="color:#c9a15a;">R</div>
+                  <div>
+                    <div class="collection-title">Rois</div>
+                    <div class="collection-subtitle">L'Agbada, symbole d'autorité suprême</div>
+                  </div>
+                </div>
+                <p class="collection-history">
+                  Le roi Yoruba (Oba) ne s'habille jamais au hasard. Son Agbada est un symbole politique
+                  et spirituel — chaque pli, chaque broderie, chaque perle raconte la continuité d'un royaume sacré.
+                </p>
+                <div class="collection-occasions">
+                  <div class="occasion-item">
+                    <span class="occasion-diamond" style="background:#c9a15a;"></span>
+                    <span class="occasion-text">Cérémonies officielles</span>
+                  </div>
+                  <div class="occasion-item">
+                    <span class="occasion-diamond" style="background:#c9a15a;"></span>
+                    <span class="occasion-text">Audiences royales</span>
+                  </div>
+                  <div class="occasion-item">
+                    <span class="occasion-diamond" style="background:#c9a15a;"></span>
+                    <span class="occasion-text">Festivals traditionnels</span>
+                  </div>
+                  <div class="occasion-item">
+                    <span class="occasion-diamond" style="background:#c9a15a;"></span>
+                    <span class="occasion-text">Intronisations</span>
+                  </div>
+                </div>
+                <div class="collection-note">
+                  <svg viewBox="0 0 24 24" fill="#c9a15a" width="20" height="20">
+                    <polygon points="12,2 22,12 12,22 2,12" />
+                  </svg>
+                  <p>L'Agbada est ici un symbole d'autorité suprême.</p>
+                </div>
+              </div>
+            </article>
+
+            <!-- REINES -->
+            <article class="collection-card reverse reveal">
+              <div class="collection-image">
+                <div class="collection-accent-bar" style="background:#a0362a;"></div>
+                <img
+                  src="Images/reine.jpeg"
+                  alt="Reine Yoruba"
+                />
+                <div class="collection-image-bottom">
+                  <div class="collection-role-tag" style="color:#a0362a;border-color:#a0362a;">Rôle royal</div>
+                  <div class="collection-image-subtitle">Le textile comme langage d'élégance</div>
+                </div>
+              </div>
+              <div class="collection-content">
+                <div class="collection-header">
+                  <div class="collection-letter" style="color:#a0362a;">R</div>
+                  <div>
+                    <div class="collection-title">Reines</div>
+                    <div class="collection-subtitle">Le textile comme langage d'élégance</div>
+                  </div>
+                </div>
+                <p class="collection-history">
+                  Les reines (Olori) utilisent le textile comme un langage d'élégance et de prestige.
+                  Leur Iro, Buba et Gele richement noué forment une architecture vestimentaire qui impose le silence et l'admiration.
+                </p>
+                <div class="collection-occasions">
+                  <div class="occasion-item">
+                    <span class="occasion-diamond" style="background:#a0362a;"></span>
+                    <span class="occasion-text">Cérémonies religieuses</span>
+                  </div>
+                  <div class="occasion-item">
+                    <span class="occasion-diamond" style="background:#a0362a;"></span>
+                    <span class="occasion-text">Événements royaux</span>
+                  </div>
+                  <div class="occasion-item">
+                    <span class="occasion-diamond" style="background:#a0362a;"></span>
+                    <span class="occasion-text">Mariages importants</span>
+                  </div>
+                  <div class="occasion-item">
+                    <span class="occasion-diamond" style="background:#a0362a;"></span>
+                    <span class="occasion-text">Rituels de fertilité</span>
+                  </div>
+                </div>
+                <div class="collection-note">
+                  <svg viewBox="0 0 24 24" fill="#a0362a" width="20" height="20">
+                    <polygon points="12,2 22,12 12,22 2,12" />
+                  </svg>
+                  <p>Le Gele, coiffe majestueuse, est une œuvre d'art en soi.</p>
+                </div>
+              </div>
+            </article>
+
+            <!-- GUERRIERS -->
+            <article class="collection-card reveal">
+              <div class="collection-image">
+                <div class="collection-accent-bar" style="background:#8b2e1f;"></div>
+                <img
+                  src="Images/hunter.jpeg"
+                  alt="Guerriers Yoruba"
+                />
+                <div class="collection-image-bottom">
+                  <div class="collection-role-tag" style="color:#8b2e1f;border-color:#8b2e1f;">Rôle royal</div>
+                  <div class="collection-image-subtitle">L'honneur avant le combat</div>
+                </div>
+              </div>
+              <div class="collection-content">
+                <div class="collection-header">
+                  <div class="collection-letter" style="color:#8b2e1f;">G</div>
+                  <div>
+                    <div class="collection-title">Guerriers</div>
+                    <div class="collection-subtitle">L'honneur avant le combat</div>
+                  </div>
+                </div>
+                <p class="collection-history">
+                  Les guerriers Yorubas (Jagunjagun) ne portent pas l'Agbada pour combattre.
+                  Au front, ils portent des tuniques légères, adaptées au mouvement. L'Agbada vient après — comme une récompense.
+                </p>
+                <div class="collection-occasions">
+                  <div class="occasion-item">
+                    <span class="occasion-diamond" style="background:#8b2e1f;"></span>
+                    <span class="occasion-text">Retour victorieux de guerre</span>
+                  </div>
+                  <div class="occasion-item">
+                    <span class="occasion-diamond" style="background:#8b2e1f;"></span>
+                    <span class="occasion-text">Cérémonies d'honneur</span>
+                  </div>
+                  <div class="occasion-item">
+                    <span class="occasion-diamond" style="background:#8b2e1f;"></span>
+                    <span class="occasion-text">Décoration par le roi</span>
+                  </div>
+                  <div class="occasion-item">
+                    <span class="occasion-diamond" style="background:#8b2e1f;"></span>
+                    <span class="occasion-text">Festivals de commémoration</span>
+                  </div>
+                </div>
+                <div class="collection-note">
+                  <svg viewBox="0 0 24 24" fill="#8b2e1f" width="20" height="20">
+                    <polygon points="12,2 22,12 12,22 2,12" />
+                  </svg>
+                  <p>L'Agbada = honneur, pas combat. C'est le vêtement du retour triomphal.</p>
+                </div>
+              </div>
+            </article>
+
+            <!-- HÉRITIERS -->
+            <article class="collection-card reverse reveal">
+              <div class="collection-image">
+                <div class="collection-accent-bar" style="background:#e8d9b8;"></div>
+                <img
+                  src="Images/pr.jpeg"
+                  alt="Héritiers Yoruba"
+                />
+                <div class="collection-image-bottom">
+                  <div class="collection-role-tag" style="color:#e8d9b8;border-color:#e8d9b8;">Rôle royal</div>
+                  <div class="collection-image-subtitle">La continuité du royaume</div>
+                </div>
+              </div>
+              <div class="collection-content">
+                <div class="collection-header">
+                  <div class="collection-letter" style="color:#e8d9b8;">H</div>
+                  <div>
+                    <div class="collection-title">Héritiers</div>
+                    <div class="collection-subtitle">La continuité du royaume</div>
+                  </div>
+                </div>
+                <p class="collection-history">
+                  Les héritiers représentent la continuité du royaume. Jeunes princes et princesses,
+                  ils apprennent à porter le poids d'une étoffe — et le poids d'une histoire.
+                  Le vêtement devient leur école silencieuse.
+                </p>
+                <div class="collection-occasions">
+                  <div class="occasion-item">
+                    <span class="occasion-diamond" style="background:#e8d9b8;"></span>
+                    <span class="occasion-text">Apprentissage des traditions</span>
+                  </div>
+                  <div class="occasion-item">
+                    <span class="occasion-diamond" style="background:#e8d9b8;"></span>
+                    <span class="occasion-text">Cérémonies de passage</span>
+                  </div>
+                  <div class="occasion-item">
+                    <span class="occasion-diamond" style="background:#e8d9b8;"></span>
+                    <span class="occasion-text">Formation culturelle</span>
+                  </div>
+                  <div class="occasion-item">
+                    <span class="occasion-diamond" style="background:#e8d9b8;"></span>
+                    <span class="occasion-text">Premiers rites de cour</span>
+                  </div>
+                </div>
+                <div class="collection-note">
+                  <svg viewBox="0 0 24 24" fill="#e8d9b8" width="20" height="20">
+                    <polygon points="12,2 22,12 12,22 2,12" />
+                  </svg>
+                  <p>Ils n'héritent pas seulement d'un trône — mais d'une mémoire tissée.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+           PHILOSOPHIE
+           ============================================ -->
+      <section class="philosophy" id="philosophie">
+        <div class="philosophy-bg">
+          <img
+            src="https://images.pexels.com/photos/32655889/pexels-photo-32655889.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1400&w=2200"
+            alt="Mains de tisserand au travail"
+          />
+          <div class="philosophy-overlay"></div>
+        </div>
+
+        <div class="container">
+          <div class="philosophy-content reveal">
+            <h2 class="italic-title">
+              Nous ne créons pas<br />
+              la <span class="accent">mode</span>.<br />
+              Nous réactivons une <span class="accent">mémoire</span>.
+            </h2>
+
+            <p class="philosophy-lead">
+              Le vêtement n'est pas un produit.
+              C'est une <span class="accent" style="font-style:italic;">identité</span>,
+              une <span class="accent" style="font-style:italic;">mémoire</span>,
+              une <span class="accent" style="font-style:italic;">histoire</span> transmise
+              — fil après fil, main après main, génération après génération.
+            </p>
+
+            <div class="philosophy-grid">
+              <div class="philosophy-card">
+                <div class="philosophy-icon">◈</div>
+                <div class="philosophy-card-title">Un musée numérique</div>
+                <p class="philosophy-card-desc">
+                  Interactif et vivant, accessible à toute la diaspora.
+                </p>
+              </div>
+              <div class="philosophy-card">
+                <div class="philosophy-icon">◆</div>
+                <div class="philosophy-card-title">Une marque culturelle</div>
+                <p class="philosophy-card-desc">
+                  Qui porte la noblesse d'un héritage millénaire.
+                </p>
+              </div>
+              <div class="philosophy-card">
+                <div class="philosophy-icon">✦</div>
+                <div class="philosophy-card-title">Une archive vivante</div>
+                <p class="philosophy-card-desc">
+                  Du vêtement Yoruba, pour les générations à venir.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#accueil" class="logo">
+              <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" style="width:2.5rem;height:2.5rem;color:var(--ochre);">
+                <path d="M20 4 L36 12 L36 28 L20 36 L4 28 L4 12 Z" />
+                <path d="M20 12 L28 16 L28 24 L20 28 L12 24 L12 16 Z" />
+                <circle cx="20" cy="20" r="2" fill="currentColor" />
+              </svg>
+              <div class="logo-text">
+                <div class="logo-title">ÀṢỌ ÌBÍLẸ̀</div>
+                <div class="logo-subtitle">Aṣọ ni ìtàn ènìyàn</div>
+              </div>
+            </a>
+            <p>
+              Musée numérique dédié à la mode Yoruba précoloniale.
+              Une archive vivante, une expérience narrative immersive,
+              un héritage réactivé.
+            </p>
+          </div>
+
+          <div>
+            <div class="footer-heading">Sections</div>
+            <ul class="footer-links">
+              <li><a href="#accueil">Accueil</a></li>
+              <li><a href="#heritage">Notre Héritage</a></li>
+              <li><a href="#tissus">Tissus Ancestraux</a></li>
+              <li><a href="#collections">Collections</a></li>
+              <li><a href="#philosophie">Philosophie</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="footer-heading">Origines</div>
+            <div class="footer-origin-item">
+              <span class="footer-origin-name">Royaume d'Ifẹ̀</span>
+              <span class="footer-origin-desc">Berceau spirituel Yoruba</span>
+            </div>
+            <div class="footer-origin-item">
+              <span class="footer-origin-name">Royaume d'Ọyọ̀</span>
+              <span class="footer-origin-desc">Empire politique et militaire</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-copy">
+            © <span id="year"></span> ÀṢỌ ÌBÍLẸ̀ — Projet culturel dédié à la mémoire Yoruba.
+          </div>
+          <div class="footer-proverb">
+            « Aṣọ ni ìtàn ènìyàn. » — Le vêtement raconte l'histoire de l'homme.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="pweb.js" defer></script>
+  </body>
+</html>
